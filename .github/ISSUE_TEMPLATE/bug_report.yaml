@@ -6,13 +6,11 @@ body:
     label: Umi version
 - type: textarea
   attributes:
-    label: Description
-    description: Briefly describe your issue and/or paste a code snippet that gives enough context
+    label: Code
+    description: Paste a code snippet that gives enough context. Use comments for additional info.
     value: |
-        ```ts
-        // Paste the relevant snippet of code...
-        ```
-    render: markdown
+        Paste the relevant snippet of TypeScript code...
+    render: ts
   validations:
     required: true
 - type: textarea
@@ -20,17 +18,5 @@ body:
     label: Error
     description: When applicable, paste the relevant part of your error message
     value: |
-        ```
-        // Paste your error message here...
-        ```
-    render: markdown
-- type: markdown
-  attributes:
-    value: |
-        - 1
-  validations:
-    required: true
-- type: markdown
-  attributes:
-    value: |
-        - 2
+        Paste your error message here...
+    render: text
