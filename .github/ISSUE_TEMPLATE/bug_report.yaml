@@ -24,18 +24,13 @@ body:
         // Paste your error message here...
         ```
     render: markdown
-- type: textarea
+- type: markdown
   attributes:
-    label: Environment
-    description: |
-      examples:
-        - **OS**: Ubuntu 20.04
-        - **Node**: 13.14.0
-        - **npm**: 7.6.3
     value: |
-        - OS:
-        - Node:
-        - npm:
-    render: markdown
+        - 1
   validations:
-    required: false
+    required: true
+- type: markdown
+  attributes:
+    value: |
+        - 2
