@@ -4,7 +4,7 @@ body:
 - type: input
   attributes:
     label: Umi version
-- type: markdown
+- type: textarea
   attributes:
     label: Description
     description: Briefly describe your issue and/or paste a code snippet that gives enough context
@@ -12,9 +12,10 @@ body:
         ```ts
         // Paste the relevant snippet of code...
         ```
+    render: markdown
   validations:
     required: true
-- type: markdown
+- type: textarea
   attributes:
     label: Error
     description: When applicable, paste the relevant part of your error message
@@ -22,3 +23,19 @@ body:
         ```
         // Paste your error message here...
         ```
+    render: markdown
+- type: textarea
+  attributes:
+    label: Environment
+    description: |
+      examples:
+        - **OS**: Ubuntu 20.04
+        - **Node**: 13.14.0
+        - **npm**: 7.6.3
+    value: |
+        - OS:
+        - Node:
+        - npm:
+    render: markdown
+  validations:
+    required: false
