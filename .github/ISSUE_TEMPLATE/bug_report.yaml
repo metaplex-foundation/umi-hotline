@@ -7,16 +7,12 @@ body:
 - type: textarea
   attributes:
     label: Code
-    description: Paste a code snippet that gives enough context. Use comments for additional info.
-    value: |
-        Paste the relevant snippet of TypeScript code...
+    description: Paste a code snippet that gives enough context. Use comments for additional info. Your code will be highlighted.
     render: ts
   validations:
     required: true
 - type: textarea
   attributes:
     label: Error
-    description: When applicable, paste the relevant part of your error message
-    value: |
-        Paste your error message here...
+    description: When applicable, paste the relevant part of your error message.
     render: text
