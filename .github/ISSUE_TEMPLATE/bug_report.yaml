@@ -1,5 +1,5 @@
 name: Ticket
-about: Get help debugging something Umi-related
+description: Get help debugging something Umi-related
 body:
 - type: checkboxes
   attributes:
